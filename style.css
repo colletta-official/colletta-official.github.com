@@ -1,5 +1,4 @@
-@import url("font/fonts.css")
-	
+@import url("font/fonts.css");	
 *{
 	margin:0px;
 	padding:0px;
@@ -18,7 +17,7 @@ body{
 	left:0;
 	top:0;
 }
-#wrap img{
+#logo{
 	max-width:400px;
 	width:53.333333vmin;
 	margin:10px;
