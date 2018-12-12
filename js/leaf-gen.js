@@ -16,7 +16,6 @@ var bgSketch=function(d)
 		var delta=vmin/12;
 		var hNo=d.round(d.width/vmin*10);
 		var vNo=d.round(d.height/vmin*10);
-		console.log(hNo, vNo, d.width/hNo, d.height/vNo);
 		var i;
 		for(i=0;i<=hNo;i++)
 		{
