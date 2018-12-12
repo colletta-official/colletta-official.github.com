@@ -28,7 +28,7 @@ var bgSketch=function(d)
 	};
 	d.leaf=function(x, y, size, rot)
 	{
-		var leafColor=[d.olor("#24adaf"),d.color("#123456"),d.color("#777777"),d.color("#00ff00"),d.color("#00cc00")];
+		var leafColor=[d.color("#24adaf"),d.color("#123456"),d.color("#777777"),d.color("#00ff00"),d.color("#00cc00")];
 		d.fill(d.random(leafColor));
 		d.push();
 		d.translate(x,y);
