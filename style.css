@@ -3,6 +3,10 @@
 	margin:0px;
 	padding:0px;
 }
+a:link{
+	text-decoration: none!important;
+	cursor: pointer;
+}
 body{
 	overflow:hidden;
 }
