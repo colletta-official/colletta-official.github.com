@@ -14,18 +14,16 @@
 }
 li{
 	display:block;
-	width:150px;
-	height:150px;
+	max-width:150px;
+	width:10vmin;
+	max-height:150px;
+	height:10vmin;
 	border:2px solid black;
 	margin:10px;
 }
 @media all and (min-width:700px){
 	li{
 		display:inline-block;
-		min-width:150px;
-		width:10vmin;
-		min-height:150px;
-		height:10vmin;
 	}
 }
 
