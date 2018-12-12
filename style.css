@@ -15,9 +15,9 @@
 li{
 	display:block;
 	max-width:150px;
-	width:10vmin;
+	width:20vmin;
 	max-height:150px;
-	height:10vmin;
+	height:20vmin;
 	border:2px solid black;
 	margin:10px;
 }
