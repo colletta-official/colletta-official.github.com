@@ -1,3 +1,5 @@
+@import url("font/fonts.css")
+	
 *{
 	margin:0px;
 	padding:0px;
@@ -22,6 +24,7 @@ body{
 	margin:10px;
 }
 li{
+	font-family: "777Kidbutterfly", sans-serif;
 	display:block;
 	max-width:150px;
 	width:20vmin;
