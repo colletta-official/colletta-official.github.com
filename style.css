@@ -7,6 +7,7 @@ body{
 }
 #wrap{
 	display:flex;
+	flex-flow:column wrap;
 	justify-content:center;
 	align-items:center;
 	width:100%;
@@ -14,6 +15,11 @@ body{
 	position:fixed;
 	left:0;
 	top:0;
+}
+#wrap img{
+	max-width:400px;
+	width:53.333333vmin;
+	margin:10px;
 }
 li{
 	display:block;
