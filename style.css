@@ -30,6 +30,7 @@ li{
 	max-height:150px;
 	height:20vmin;
 	border:2px solid black;
+	text-align:center;
 	margin:10px;
 }
 @media all and (min-width:700px){
