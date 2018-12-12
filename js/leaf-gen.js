@@ -14,6 +14,7 @@ var bgSketch=function(d)
 		var delta=vmin/12;
 		var hNo=d.round(d.width/40);
 		var vNo=d.round(d.height/40);
+		console.log(hNo, vNo, d.width/hNo, d.height/vNo);
 		var i;
 		for(i=0;i<=hNo;i++)
 		{
@@ -28,7 +29,7 @@ var bgSketch=function(d)
 	};
 	d.leaf=function(x, y, size, rot)
 	{
-		var leafColor=[d.color("#24adaf"),d.color("#123456"),d.color("#777777"),d.color("#00ff00"),d.color("#00cc00")];
+		var leafColor=[d.color("#86bc33"),d.color("#04a64a"),d.color("#008937"),d.color("#6abfa6"),d.color("#008f66")];
 		d.fill(d.random(leafColor));
 		d.push();
 		d.translate(x,y);
