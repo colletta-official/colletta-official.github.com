@@ -88,8 +88,10 @@ li p{
 #colletta{
 	position:fixed;
 	width:26vmax;
+	top:calc( 100vh - 26vmax );
+	left:calc( 100vw - 26vmax );
 	animation-duration: 5s;
-	animation-delay: 3s;
+	animation-delay: 0s;
 	animation-name:collettaMove;
 }
 
@@ -97,7 +99,7 @@ li p{
 	position:fixed;
 	width:22vmax;
 	animation-duration: 5s;
-	animation-delay: 3s;
+	animation-delay: 0s;
 	animation-name:marchMove;
 }
 
@@ -105,7 +107,7 @@ li p{
 	position:fixed;
 	width:26vmax;
 	animation-duration: 5s;
-	animation-delay: 3s;
+	animation-delay: 0s;
 	animation-name:liddellMove;
 }
 
@@ -113,19 +115,23 @@ li p{
 	position:fixed;
 	width:22vmax;
 	animation-duration: 5s;
-	animation-delay: 3s;
+	animation-delay: 0s;
 	animation-name:klondikeMove;
 }
 
 @keyframes collettaMove{
 	0%{
-		opacity:0;
 		top:100vh;
-		left:calc( 100vh - 75% );
+		left:calc( 100vw - 19.5vmax );
+		animation-timing-function:linear;
+	}
+	60%{
+		top:100vh;
+		left:calc( 100vw - 19.5vmax );
+		animation-timing-function:cubic-bezier(0.23, 1, 0.32, 1);
 	}
 	100%{
-		opacity:1;
-		top:calc( 100vh - 100% );
-		left:calc( 100vh - 100% );
+		top:calc( 100vh - 26vmax );
+		left:calc( 100vw - 26vmax );
 	}
 }
