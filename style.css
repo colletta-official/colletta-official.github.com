@@ -20,6 +20,9 @@ body{
 	position:fixed;
 	left:0;
 	top:0;
+	animation-duration: 6s;
+	animation-delay: 0s;
+	animation-name:introCur;
 }
 #logo{
 	max-width:400px;
@@ -79,6 +82,23 @@ li p{
 	}
 }
 
+@keyframes introCur{
+	0%{
+		opacity:0;
+		transform:scale(1.2);
+		animation-timing-function:linear;
+	}
+	83.333%{
+		opacity:0;
+		transform:scale(1.2);
+		animation-timing-function:cubic-bezier(0.23, 1, 0.32, 1);
+	}
+	100%{
+		opacity:1;
+		transform:scale(1);
+	}
+}
+
 #chara{
 	position:fixed;
 	width:100%;
@@ -87,9 +107,9 @@ li p{
 
 #colletta{
 	position:fixed;
-	width:26vmax;
-	top:calc( 100vh - 26vmax );
-	left:calc( 100vw - 26vmax );
+	width:20vmax;
+	top:calc( 100vh - 20vmax );
+	left:calc( 100vw - 20vmax );
 	animation-duration: 5s;
 	animation-delay: 0s;
 	animation-name:collettaMove;
@@ -97,8 +117,8 @@ li p{
 
 #march{
 	position:fixed;
-	width:22vmax;
-	top:calc(100vh - 22vmax );
+	width:16vmax;
+	top:calc(100vh - 16vmax );
 	left:0vw;
 	animation-duration: 5s;
 	animation-delay: 0s;
@@ -107,7 +127,7 @@ li p{
 
 #liddell{
 	position:fixed;
-	width:26vmax;
+	width:20vmax;
 	top:0px;
 	left:0px;
 	animation-duration: 5s;
@@ -117,9 +137,9 @@ li p{
 
 #klondike{
 	position:fixed;
-	width:22vmax;
+	width:16vmax;
 	top:0vh;
-	left:calc( 100vw - 22vmax );
+	left:calc( 100vw - 16vmax );
 	animation-duration: 5s;
 	animation-delay: 0s;
 	animation-name:klondikeMove;
@@ -128,47 +148,47 @@ li p{
 @keyframes collettaMove{
 	0%{
 		top:100vh;
-		left:calc( 100vw - 19.5vmax );
+		left:calc( 100vw - 15vmax );
 		animation-timing-function:linear;
 	}
 	50%{
 		top:100vh;
-		left:calc( 100vw - 19.5vmax );
-		animation-timing-function:cubic-bezier(0.23, 1, 0.32, 1);
+		left:calc( 100vw - 15vmax );
+		animation-timing-function:cubic-bezier(0.19, 1, 0.22, 1);
 	}
 	100%{
-		top:calc( 100vh - 26vmax );
-		left:calc( 100vw - 26vmax );
+		top:calc( 100vh - 20vmax );
+		left:calc( 100vw - 20vmax );
 	}
 }
 
 @keyframes marchMove{
 	0%{
 		top:100vh;
-		left:-5.5vmax;
+		left:-4vmax;
 		animation-timing-function:linear;
 	}
 	50%{
 		top:100vh;
-		left:-5.5vmax;
-		animation-timing-function:cubic-bezier(0.23, 1, 0.32, 1);
+		left:-4vmax;
+		animation-timing-function:cubic-bezier(0.19, 1, 0.22, 1);
 	}
 	100%{
-		top:calc(100vh - 22vmax );
+		top:calc(100vh - 16vmax );
 		left:0vw;
 	}
 }
 
 @keyframes liddellMove{
 	0%{
-		top:-26vmax;
-		left:-13vmax;
+		top:-20vmax;
+		left:-10vmax;
 		animation-timing-function:linear;
 	}
 	50%{
-		top:-26vmax;
-		left:-13vmax;
-		animation-timing-function:cubic-bezier(0.23, 1, 0.32, 1);
+		top:-20vmax;
+		left:-10vmax;
+		animation-timing-function:cubic-bezier(0.19, 1, 0.22, 1);
 	}
 	100%{
 		top:0vh;
@@ -178,17 +198,17 @@ li p{
 
 @keyframes klondikeMove{
 	0%{
-		top:-22vmax;
-		left:calc( 100vw - 16.5vmax );
+		top:-16vmax;
+		left:calc( 100vw - 12vmax );
 		animation-timing-function:linear;
 	}
 	50%{
-		top:-22vmax;
-		left:calc( 100vw - 16.5vmax );
-		animation-timing-function:cubic-bezier(0.23, 1, 0.32, 1);
+		top:-16vmax;
+		left:calc( 100vw - 12vmax );
+		animation-timing-function:cubic-bezier(0.19, 1, 0.22, 1);
 	}
 	100%{
 		top:0vh;
-		left:calc( 100vw - 22vmax );
+		left:calc( 100vw - 16vmax );
 	}
 }
