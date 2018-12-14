@@ -125,7 +125,7 @@ li p{
 		left:calc( 100vw - 19.5vmax );
 		animation-timing-function:linear;
 	}
-	60%{
+	50%{
 		top:100vh;
 		left:calc( 100vw - 19.5vmax );
 		animation-timing-function:cubic-bezier(0.23, 1, 0.32, 1);
@@ -133,5 +133,56 @@ li p{
 	100%{
 		top:calc( 100vh - 26vmax );
 		left:calc( 100vw - 26vmax );
+	}
+}
+
+@keyframes marchMove{
+	0%{
+		top:100vh;
+		left:-5.5vmax;
+		animation-timing-function:linear;
+	}
+	50%{
+		top:100vh;
+		left:-5.5vmax;
+		animation-timing-function:cubic-bezier(0.23, 1, 0.32, 1);
+	}
+	100%{
+		top:calc(100vh - 22vmax );
+		left:0vw;
+	}
+}
+
+@keyframes liddellMove{
+	0%{
+		top:-26vmax;
+		left:-13vmax;
+		animation-timing-function:linear;
+	}
+	50%{
+		top:-26vmax;
+		left:-13vmax;
+		animation-timing-function:cubic-bezier(0.23, 1, 0.32, 1);
+	}
+	100%{
+		top:0vh;
+		left:0vw;
+	}
+}
+
+@keyframes klondikeMove{
+	0%{
+		top:-22vmax;
+		left:calc( 100vw - 16.5vmax );
+		animation-timing-function:linear;
+	}
+	50%{
+		top:-22vmax;
+		left:calc( 100vw - 16.5vmax );
+		animation-timing-function:cubic-bezier(0.23, 1, 0.32, 1);
+	}
+	100%{
+		top:0vh;
+		left:calc( 100vw - 22vmax );
 	}
 }
