@@ -98,6 +98,8 @@ li p{
 #march{
 	position:fixed;
 	width:22vmax;
+	top:calc(100vh - 22vmax );
+	left:0vw;
 	animation-duration: 5s;
 	animation-delay: 0s;
 	animation-name:marchMove;
@@ -106,6 +108,8 @@ li p{
 #liddell{
 	position:fixed;
 	width:26vmax;
+	top:0px;
+	left:0px;
 	animation-duration: 5s;
 	animation-delay: 0s;
 	animation-name:liddellMove;
@@ -114,6 +118,8 @@ li p{
 #klondike{
 	position:fixed;
 	width:22vmax;
+	top:0vh;
+	left:calc( 100vw - 22vmax );
 	animation-duration: 5s;
 	animation-delay: 0s;
 	animation-name:klondikeMove;
