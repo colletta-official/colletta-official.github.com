@@ -56,6 +56,7 @@ li p{
 }
 
 #bg{
+	position:fixed;
 	animation-duration: 3s;
 	animation-delay: 0s;
 	animation-name:introBG;
@@ -75,5 +76,56 @@ li p{
 	100%{
 		opacity:1;
 		transform:scale(1);
+	}
+}
+
+#chara{
+	position:fixed;
+	width:100%;
+	height:100%;
+}
+
+#colletta{
+	position:fixed;
+	width:26vmax;
+	animation-duration: 5s;
+	animation-delay: 3s;
+	animation-name:collettaMove;
+}
+
+#march{
+	position:fixed;
+	width:22vmax;
+	animation-duration: 5s;
+	animation-delay: 3s;
+	animation-name:marchMove;
+}
+
+#liddell{
+	position:fixed;
+	width:26vmax;
+	animation-duration: 5s;
+	animation-delay: 3s;
+	animation-name:liddellMove;
+}
+
+#klondike{
+	position:fixed;
+	width:22vmax;
+	animation-duration: 5s;
+	animation-delay: 3s;
+	animation-name:klondikeMove;
+}
+
+@keyframes collettaMove{
+	0%{
+		opacity:0;
+		top:100vh;
+		left:calc( 100vh - 75% );
+	}
+	100%{
+		opacity:1;
+		top:calc( 100vh - 100% );
+		left:calc( 100vh - 100% );
 	}
 }
